@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Info</title>
+    <link rel="shortcut icon" href="new_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <nav id="nav">
+            <a href="#" onclick="reload()">
+                <img src="new_logo.png" alt="Logo">
+            </a>
+            <ul>
+                <li><a href="#" class="navcolor" id="India" onclick="onNavClick('India')">India</a></li>
+                <li><a href="#" class="navcolor" id="Sports" onclick="onNavClick('Sports')">Sports</a></li>
+                <li><a href="#" class="navcolor" id="Technology" onclick="onNavClick('Technology')">Technology</a></li>
+                <li><a href="#" class="navcolor" id="Politics" onclick="onNavClick('Politics')">Politics</a></li>
+            </ul>
+            <div id="search_bar">
+                <input type="search" name="search" placeholder="e.g. Movies" class="news-input" id="search-txt">
+                <button id="search-btn">Search</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main" id="main-container">
+        
+    </div>
+
+    <template id="template">
+        <div class="card">
+            <div class="card-img">
+            <img src="https://via.placeholder.com/400x200" alt="News-Image" id="news-img">
+            </div>
+            <div class="card-container">
+                <h4 id="news-heading">This is a Heading</h4>
+                <h6 id="news-source">End Gadget : 18/08/2023</h6>
+                <p class="news-desc" id="news-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi nam quidem velit dolores quae numquam ipsam animi necessitatibus nesciunt sequi.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
